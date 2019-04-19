@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11ab92e6-0517-45a0-bc9b-040d511e8e0e" name="Default Changelist" comment="">
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cvae_gap.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/cvae_gap.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cvae_occ.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/cvae_occ.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/RRTDataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/NarrowPassDataset.py" afterDir="false" />
+=======
       <change afterPath="$PROJECT_DIR$/.idea/VAE-Motion-Planning.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/dictionaries/rong.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -11,6 +17,7 @@
       <change afterPath="$PROJECT_DIR$/utils/NarrowPassage.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/utils/mnist.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+>>>>>>> d90ebe2384895a9762c42d108551b9f5ab42b752
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,12 +26,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/NarrowPassDataset.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="23" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="23" />
+=======
     <leaf>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/RRTDataset.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
               <caret line="9" column="82" selection-start-line="9" selection-start-column="82" selection-end-line="9" selection-end-column="82" />
+>>>>>>> d90ebe2384895a9762c42d108551b9f5ab42b752
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -32,10 +48,17 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/CVAE.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="594">
+=======
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/models/CVAE.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
+>>>>>>> d90ebe2384895a9762c42d108551b9f5ab42b752
               <caret line="35" column="52" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="52" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
@@ -47,8 +70,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/NarrowPassage.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="270">
+              <caret line="18" column="11" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="11" />
+=======
             <state relative-caret-position="106">
               <caret line="103" column="17" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="17" />
+>>>>>>> d90ebe2384895a9762c42d108551b9f5ab42b752
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -87,6 +115,20 @@
       <list>
         <option value="$PROJECT_DIR$/models/models.py" />
         <option value="$PROJECT_DIR$/models/CVAE.py" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/utils/NarrowPassage.py" />
+        <option value="$PROJECT_DIR$/utils/mnist.py" />
+        <option value="$PROJECT_DIR$/data/RRTDataset.py" />
+        <option value="$PROJECT_DIR$/utils/visualloss.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="169" />
+    <option name="y" value="24" />
+    <option name="width" value="1279" />
+    <option name="height" value="876" />
+=======
         <option value="$PROJECT_DIR$/data/RRTDataset.py" />
         <option value="$PROJECT_DIR$/utils/NarrowPassage.py" />
         <option value="$PROJECT_DIR$/utils/mnist.py" />
@@ -98,6 +140,7 @@
     <option name="y" value="156" />
     <option name="width" value="1400" />
     <option name="height" value="836" />
+>>>>>>> d90ebe2384895a9762c42d108551b9f5ab42b752
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -107,7 +150,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
+=======
       <pane id="Scope" />
+>>>>>>> d90ebe2384895a9762c42d108551b9f5ab42b752
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -134,6 +180,10 @@
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
+      <pane id="Scope" />
+=======
+>>>>>>> d90ebe2384895a9762c42d108551b9f5ab42b752
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -173,6 +223,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
+    <frame x="169" y="24" width="1279" height="876" extended-state="4" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16175298" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+=======
     <frame x="1764" y="156" width="1400" height="836" extended-state="0" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
@@ -182,6 +240,7 @@
       <window_info anchor="bottom" id="Python Console" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
+>>>>>>> d90ebe2384895a9762c42d108551b9f5ab42b752
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -189,6 +248,13 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+<<<<<<< HEAD
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+=======
+>>>>>>> d90ebe2384895a9762c42d108551b9f5ab42b752
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -198,20 +264,34 @@
     <entry file="file://$PROJECT_DIR$/data/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/models/CVAE.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="35" column="52" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+=======
     <entry file="file://$PROJECT_DIR$/data/RRTDataset.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="82" selection-start-line="9" selection-start-column="82" selection-end-line="9" selection-end-column="82" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
+>>>>>>> d90ebe2384895a9762c42d108551b9f5ab42b752
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/NarrowPassage.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="270">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="11" />
+=======
         <state relative-caret-position="106">
           <caret line="103" column="17" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="17" />
+>>>>>>> d90ebe2384895a9762c42d108551b9f5ab42b752
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
@@ -225,12 +305,31 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/utils/visual_loss.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <element signature="e#14#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/NarrowPassDataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+=======
     <entry file="file://$PROJECT_DIR$/models/CVAE.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="35" column="52" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="52" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
+>>>>>>> d90ebe2384895a9762c42d108551b9f5ab42b752
           </folding>
         </state>
       </provider>
