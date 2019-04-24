@@ -45,6 +45,7 @@ class Encoder(nn.Module):
         for i, (in_size, out_size) in enumerate(zip(layer_sizes[:-1], layer_sizes[1:])):
             modules.append(nn.Linear(in_size, out_size))
             modules.append(nn.ReLU())
+            modules.append(nn.Dropout(p=0.5))
 
         self.sequential = nn.Sequential(*modules)
         self.linear_means = nn.Linear(layer_sizes[-1], latent_size)
@@ -66,6 +67,7 @@ class Decoder(nn.Module):
         for i, (in_size, out_size) in enumerate(zip(layer_sizes[:-1], layer_sizes[1:])):
             modules.append(nn.Linear(in_size, out_size))
             modules.append(nn.ReLU())
+            modules.append(nn.Dropout(p=0.5))
         modules.append(nn.Linear(layer_sizes[-1], sample_size))
 
         self.sequential = nn.Sequential(*modules)
