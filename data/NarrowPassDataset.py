@@ -20,4 +20,4 @@ class NarrowPassDataset(Dataset):
     def __getitem__(self, idx):
         return self.dataset[idx, :self.sample_dim], \
                 self.dataset[idx, self.sample_dim:(self.sample_dim + self.con_dim)], \
-                self.dataset[idx, (self.sample_dim + self.con_dim):]
+                self.dataset[idx, -self.occ_dim:]
