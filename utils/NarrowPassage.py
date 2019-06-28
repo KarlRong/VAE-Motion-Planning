@@ -146,11 +146,11 @@ def plotSampleAttention(s, condition, occ, attention):
     gridSize = 11
     occGrid = gap2occ(condition, gridSize)
     occGridSamples = getOccGrid(gridSize)
-    for i in range(0, gridSize * gridSize):  # plot occupancy grid
-        if occGrid[i] == 0:
-            plt.scatter(occGridSamples[i, 0], occGridSamples[i, 1], color="red", s=70, alpha=0.8)
-        else:
-            plt.scatter(occGridSamples[i, 0], occGridSamples[i, 1], color="green", s=70, alpha=0.8)
+#     for i in range(0, gridSize * gridSize):  # plot occupancy grid
+#         if occGrid[i] == 0:
+#             plt.scatter(occGridSamples[i, 0], occGridSamples[i, 1], color="red", s=70, alpha=0.8)
+#         else:
+#             plt.scatter(occGridSamples[i, 0], occGridSamples[i, 1], color="green", s=70, alpha=0.8)
 
     init = condition[9:15]
     goal = condition[15:21]
