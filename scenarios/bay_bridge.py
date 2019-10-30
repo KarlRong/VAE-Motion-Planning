@@ -38,7 +38,10 @@ def bay_bridge_example(render=None,
         A non-rl experiment demonstrating the performance of human-driven
         vehicles simulated by sumo on the Bay Bridge.
     """
-    sim_params = SumoParams(sim_step=0.6, overtake_right=True)
+    sim_params = SumoParams(
+        sim_step=0.6, 
+        emission_path="./data/bay_bridge/",
+        overtake_right=True)
 
     if render is not None:
         sim_params.render = render

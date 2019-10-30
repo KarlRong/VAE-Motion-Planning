@@ -95,7 +95,7 @@ if __name__ == "__main__":
                            save_render=True,
                            sight_radius=30,
                            pxpm=3,
-                           show_radius=True)
+                           show_radius=False)
 
     # run for a set number of rollouts / time steps
     exp.run(1, 750)
