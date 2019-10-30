@@ -14,25 +14,11 @@ from commonroad.visualization.draw_dispatch_cr import draw_object
 
 
 def get_scenario_name_from_netfile(filepath:str) -> str:
-    """
-    Returns the scenario name specified in the net file.
-
-    :param filepath: the path of the net file
-
-    """
     scenario_name:str = (os.path.splitext(os.path.basename(filepath))[0]).split('.')[0]
     return scenario_name
 
 
 def convert_net_to_cr(net_file:str, out_folder:str=None,verbose=False) -> str:
-    """
-    Converts .net file to CommonRoad xml using netconvert and OpenDRIVE 2 Lanelet Converter.
-
-    :param net_file: path of .net.xml file
-    :param out_folder: path of output folder for CommonRoad scenario.
-
-    :return: commonroad map file
-    """
     assert isinstance(net_file,str)
 
     if out_folder is None:
@@ -58,9 +44,14 @@ def convert_net_to_cr(net_file:str, out_folder:str=None,verbose=False) -> str:
     if verbose:
         print('converted to Commonroad (.cr.xml)')
     # write CommonRoad scenario to file
-    commonroad_writer = CommonRoadFileWriter(scenario, planning_problem_set=None,
-                                             source="Converted from SUMO net using netconvert and OpenDRIVE 2 Lanelet Converter",
-                                             tags='',author='',affiliation='')
+    commonroad_writer = CommonRoadFileWriter(
+        scenario, 
+        planning_problem_set=None,
+        source="Converted from SUMO net using netconvert and OpenDRIVE 2 Lanelet Converter",
+        tags='',
+        author='',
+        affiliation=''
+        )
     with open(cr_map_file, "w") as fh:
         commonroad_writer.write_scenario_to_file_io(file_io=fh)
 
@@ -75,19 +66,13 @@ if __name__ == "__main__":
     if not args.net:
         print("please choose the .net.xml file")
     else:
-        here = os.path.dirname(os.path.abspath(__file__)
-        
+        here = os.path.dirname(os.path.abspath(__file__))
         net_file = os.path.join(here, args.net)
-        out_folder = os.paht.join(here, "cr")
-        scenario_name = convert_net_to_cr(net_file, out_folder, True)
+        out_folder = os.path.join(here, "cr")
+        scenario = convert_net_to_cr(net_file, out_folder, True)
 
-        # file_path = os.path.join(os.getcwd(), '/home/rong/VAE-Motion-Planning/scenarios/cr/a9.cr.xml')
-        # file_path = "/home/rong/VAE-Motion-Planning/scenarios/cr/highway_20191023-2147261571838446.cr.xml"
-        file_path = os.path.join(here, scenario_name, ".cr.xml")
-        scenario, planning_problem_set = CommonRoadFileReader(file_path).open()
+        file_path = os.path.join(out_folder, scenario +  ".cr.xml")
 
-        plt.figure(figsize=(25, 10))
-        draw_object(scenario)
-        # draw_object(planning_problem_set)
-        plt.gca().set_aspect('equal')
-        plt.show()
+        from showScenario import draw_scenario
+        draw_scenario(file_path)
+

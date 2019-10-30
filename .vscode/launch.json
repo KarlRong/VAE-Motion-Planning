@@ -1,0 +1,40 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "ssssssssssssssss",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/scenarios",
+            "program": "/home/rong/VAE-Motion-Planning/scenarios/showCr.py",
+            "console": "externalTerminal",
+            "args": [
+                "--file",
+                "/home/rong/VAE-Motion-Planning/scenarios/cr/highway.cr.xml"
+            ]   
+        },
+        {
+            "name": "demo",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/scenarios",
+            "program": "/home/rong/VAE-Motion-Planning/scenarios/showCr.py",
+            "console": "externalTerminal",
+            "args": [
+                "--file",
+                "/home/rong/VAE-Motion-Planning/scenarios/cr/USA_Lanker-1_1_T-1.xml"
+            ]   
+        },
+        {
+            "name": "showScenario",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/scenarios",
+            "program": "/home/rong/VAE-Motion-Planning/scenarios/showScenario.py",
+            "console": "externalTerminal",
+        }
+    ]
+}
