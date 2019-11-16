@@ -104,14 +104,7 @@ venv.bak/
 
 # mypy
 .mypy_cache/
-scenarios/data/bay_bridge/bay_bridge_20191023-2000001571832000.8383315-emission.xml
-scenarios/data/highway/highway_20191023-1757041571824624.5293925-emission.csv
-scenarios/data/highway_ramp/highway-ramp_20191023-1836381571826998.948572-emission.csv
-scenarios/cr/highway-ramp_20191024-2052161571921536.cr.xml
-scenarios/cr/highway.cr.xml
-scenarios/data/bay_bridge_20191023-2000001571832000.8383315-emission.xml
-scenarios/data/highway_20191023-1757041571824624.5293925-emission.csv
-scenarios/data/highway-ramp_20191023-1836381571826998.948572-emission.csv
-scenarios/net/bay_bridge.net.xml
-scenarios/net/highway_20191023-2147261571838446.5946534.net.xml
-scenarios/net/highway-ramp_20191024-2052161571921536.9955587.net.xml
+
+# traffic data
+scenarios/commonroad_data/*
+scenarios/sumo_data/*

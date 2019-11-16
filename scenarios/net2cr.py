@@ -68,11 +68,11 @@ if __name__ == "__main__":
     else:
         here = os.path.dirname(os.path.abspath(__file__))
         net_file = os.path.join(here, args.net)
-        out_folder = os.path.join(here, "cr")
+        out_folder = os.path.join(here, "./commonroad_data")
         scenario = convert_net_to_cr(net_file, out_folder, True)
 
         file_path = os.path.join(out_folder, scenario +  ".cr.xml")
 
-        from showScenario import draw_scenario
-        draw_scenario(file_path)
+        from utils.show_scenario import show_scenario
+        show_scenario(file_path)
 

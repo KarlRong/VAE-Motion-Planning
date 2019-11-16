@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Sat Nov 16 18:04:29 2019 by Eclipse SUMO netconvert Version v1_1_0+0000-2147d155b1
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <node-files value="/home/rong/flow/flow/core/kernel/network/debug/net/highway-ramp_20191116-1804281573898668.352979.nod.xml"/>
+        <edge-files value="/home/rong/flow/flow/core/kernel/network/debug/net/highway-ramp_20191116-1804281573898668.352979.edg.xml"/>
+        <type-files value="/home/rong/flow/flow/core/kernel/network/debug/net/highway-ramp_20191116-1804281573898668.352979.typ.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/home/rong/flow/flow/core/kernel/network/debug/cfg/highway-ramp_20191116-1804281573898668.352979.net.xml"/>
+    </output>
+
+    <junctions>
+        <no-internal-links value="false"/>
+        <no-turnarounds value="true"/>
+    </junctions>
+
+</configuration>
+-->
+
+<net version="1.1" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,141.42" convBoundary="0.00,0.00,3000.00,141.42" origBoundary="0.00,-141.42,3000.00,0.00" projParameter="!"/>
+
+    <type id="highway" numLanes="3" speed="100.00"/>
+    <type id="off_ramp" numLanes="1" speed="40.00"/>
+    <type id="on_ramp" numLanes="1" speed="40.00"/>
+
+    <edge id=":highway_1_0" function="internal">
+        <lane id=":highway_1_0_0" index="0" speed="15.77" length="23.27" shape="384.46,123.62 389.42,127.91 394.48,130.97 399.65,132.81 404.93,133.42"/>
+    </edge>
+    <edge id=":highway_1_1" function="internal">
+        <lane id=":highway_1_1_0" index="0" speed="100.00" length="24.53" shape="380.40,133.42 404.93,133.42"/>
+        <lane id=":highway_1_1_1" index="1" speed="100.00" length="24.53" shape="380.40,136.62 404.93,136.62"/>
+        <lane id=":highway_1_1_2" index="2" speed="100.00" length="24.53" shape="380.40,139.82 404.93,139.82"/>
+    </edge>
+    <edge id=":highway_2_0" function="internal">
+        <lane id=":highway_2_0_0" index="0" speed="15.81" length="23.39" shape="2495.07,133.42 2502.56,132.39 2508.24,129.85 2512.45,126.64 2515.54,123.62"/>
+    </edge>
+    <edge id=":highway_2_1" function="internal">
+        <lane id=":highway_2_1_0" index="0" speed="100.00" length="24.53" shape="2495.07,133.42 2519.60,133.42"/>
+        <lane id=":highway_2_1_1" index="1" speed="100.00" length="24.53" shape="2495.07,136.62 2519.60,136.62"/>
+        <lane id=":highway_2_1_2" index="2" speed="100.00" length="24.53" shape="2495.07,139.82 2519.60,139.82"/>
+    </edge>
+
+    <edge id="highway_0" from="highway_0" to="highway_1" priority="-1" type="highway" length="400.00">
+        <lane id="highway_0_0" index="0" speed="100.00" length="400.00" shape="0.00,133.42 380.40,133.42"/>
+        <lane id="highway_0_1" index="1" speed="100.00" length="400.00" shape="0.00,136.62 380.40,136.62"/>
+        <lane id="highway_0_2" index="2" speed="100.00" length="400.00" shape="0.00,139.82 380.40,139.82"/>
+    </edge>
+    <edge id="highway_1" from="highway_1" to="highway_2" priority="-1" type="highway" length="2100.00">
+        <lane id="highway_1_0" index="0" speed="100.00" length="2100.00" shape="404.93,133.42 2495.07,133.42"/>
+        <lane id="highway_1_1" index="1" speed="100.00" length="2100.00" shape="404.93,136.62 2495.07,136.62"/>
+        <lane id="highway_1_2" index="2" speed="100.00" length="2100.00" shape="404.93,139.82 2495.07,139.82"/>
+    </edge>
+    <edge id="highway_2" from="highway_2" to="highway_3" priority="-1" type="highway" length="500.00">
+        <lane id="highway_2_0" index="0" speed="100.00" length="500.00" shape="2519.60,133.42 3000.00,133.42"/>
+        <lane id="highway_2_1" index="1" speed="100.00" length="500.00" shape="2519.60,136.62 3000.00,136.62"/>
+        <lane id="highway_2_2" index="2" speed="100.00" length="500.00" shape="2519.60,139.82 3000.00,139.82"/>
+    </edge>
+    <edge id="off_ramp_0" from="highway_2" to="off_ramp_0" priority="-1" type="off_ramp" length="200.00">
+        <lane id="off_ramp_0_0" index="0" speed="40.00" length="200.00" shape="2515.54,123.62 2640.29,-1.13"/>
+    </edge>
+    <edge id="on_ramp_0" from="on_ramp_0" to="highway_1" priority="-1" type="on_ramp" length="200.00">
+        <lane id="on_ramp_0_0" index="0" speed="40.00" length="200.00" shape="259.71,-1.13 384.46,123.62"/>
+    </edge>
+
+    <junction id="highway_0" type="dead_end" x="0.00" y="141.42" incLanes="" intLanes="" shape="0.00,141.42 0.00,131.82" radius="10.00"/>
+    <junction id="highway_1" type="priority" x="400.00" y="141.42" incLanes="on_ramp_0_0 highway_0_0 highway_0_1 highway_0_2" intLanes=":highway_1_0_0 :highway_1_1_0 :highway_1_1_1 :highway_1_1_2" shape="404.93,141.42 404.93,131.82 401.61,131.56 398.33,130.78 395.09,129.49 391.89,127.67 388.72,125.34 385.59,122.49 383.33,124.75 385.21,126.91 386.15,128.68 386.13,130.05 385.17,131.04 383.26,131.62 380.40,131.82 380.40,141.42" radius="10.00">
+        <request index="0" response="1110" foes="1110" cont="0"/>
+        <request index="1" response="0000" foes="0001" cont="0"/>
+        <request index="2" response="0000" foes="0001" cont="0"/>
+        <request index="3" response="0000" foes="0001" cont="0"/>
+    </junction>
+    <junction id="highway_2" type="priority" x="2500.00" y="141.42" incLanes="highway_1_0 highway_1_1 highway_1_2" intLanes=":highway_2_0_0 :highway_2_1_0 :highway_2_1_1 :highway_2_1_2" shape="2519.60,141.42 2519.60,131.82 2516.74,131.62 2514.83,131.04 2513.87,130.05 2513.85,128.68 2514.79,126.91 2516.67,124.75 2514.41,122.49 2511.09,125.81 2508.41,128.28 2505.92,130.00 2503.17,131.09 2499.71,131.66 2495.07,131.82 2495.07,141.42" radius="10.00">
+        <request index="0" response="0000" foes="0000" cont="0"/>
+        <request index="1" response="0000" foes="0000" cont="0"/>
+        <request index="2" response="0000" foes="0000" cont="0"/>
+        <request index="3" response="0000" foes="0000" cont="0"/>
+    </junction>
+    <junction id="highway_3" type="dead_end" x="3000.00" y="141.42" incLanes="highway_2_0 highway_2_1 highway_2_2" intLanes="" shape="3000.00,131.82 3000.00,141.42" radius="10.00"/>
+    <junction id="off_ramp_0" type="dead_end" x="2641.42" y="0.00" incLanes="off_ramp_0_0" intLanes="" shape="2639.16,-2.26 2641.42,-0.00"/>
+    <junction id="on_ramp_0" type="dead_end" x="258.58" y="0.00" incLanes="" intLanes="" shape="258.58,0.00 260.84,-2.26"/>
+
+    <connection from="highway_0" to="highway_1" fromLane="0" toLane="0" via=":highway_1_1_0" dir="s" state="M"/>
+    <connection from="highway_0" to="highway_1" fromLane="1" toLane="1" via=":highway_1_1_1" dir="s" state="M"/>
+    <connection from="highway_0" to="highway_1" fromLane="2" toLane="2" via=":highway_1_1_2" dir="s" state="M"/>
+    <connection from="highway_1" to="off_ramp_0" fromLane="0" toLane="0" via=":highway_2_0_0" dir="r" state="M"/>
+    <connection from="highway_1" to="highway_2" fromLane="0" toLane="0" via=":highway_2_1_0" dir="s" state="M"/>
+    <connection from="highway_1" to="highway_2" fromLane="1" toLane="1" via=":highway_2_1_1" dir="s" state="M"/>
+    <connection from="highway_1" to="highway_2" fromLane="2" toLane="2" via=":highway_2_1_2" dir="s" state="M"/>
+    <connection from="on_ramp_0" to="highway_1" fromLane="0" toLane="0" via=":highway_1_0_0" dir="r" state="m"/>
+
+    <connection from=":highway_1_0" to="highway_1" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":highway_1_1" to="highway_1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":highway_1_1" to="highway_1" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":highway_1_1" to="highway_1" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":highway_2_0" to="off_ramp_0" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":highway_2_1" to="highway_2" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":highway_2_1" to="highway_2" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":highway_2_1" to="highway_2" fromLane="2" toLane="2" dir="s" state="M"/>
+
+</net>
