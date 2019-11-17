@@ -22,10 +22,11 @@ def plt_scenario(filename, nrun):
 
     fig = plt.figure(figsize=(figsize[0] / inch_in_cm, figsize[1] / inch_in_cm))
     fig.gca().axis('equal')
+    # fig.patch.set_facecolor('black')
     handles = {}  # collects handles of obstacle patches, plotted by matplotlib
 
-    draw_params =  create_draw_params()
-    draw_params['time_begin'] = 0
+    # draw_params =  create_draw_params()
+    draw_params = {'time_begin':0}
     # inital plot including the lanelet network
     draw_object(scenario, handles=handles, draw_params=draw_params)
     fig.canvas.draw()
