@@ -15,3 +15,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${TORCH_CXX_FLAGS}")
 add_executable(example-app example-app.cpp)
 target_link_libraries(example-app "${TORCH_LIBRARIES}")
 set_property(TARGET example-app PROPERTY CXX_STANDARD 14)
+
+add_executable(narrowpassage narrowpassage.cpp)
+target_link_libraries(narrowpassage "${TORCH_LIBRARIES}")
+set_property(TARGET narrowpassage PROPERTY CXX_STANDARD 14)

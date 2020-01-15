@@ -5,11 +5,11 @@
     "version": "0.2.0",
     "configurations": [
     {
-        "name": "plan",
+        "name": "narrowpassage",
         "type": "cppdbg",
         "request": "launch",
-        "program": "${workspaceFolder}/build/plan",
-        "args": [],
+        "program": "${workspaceFolder}/build/narrowpassage",
+        "args": ["checkpoints/traced_attention_model.pt"],
         "stopAtEntry": false,
         "cwd": "${workspaceFolder}",
         "environment": [],
