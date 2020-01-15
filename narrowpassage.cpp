@@ -43,10 +43,23 @@ int main(int argc, const char *argv[])
     torch::Tensor sample = torch::rand({256, 6}).to(device);
     torch::Tensor startend = torch::rand({256, 12}).to(device);
     torch::Tensor occ = torch::rand({256, 1, 100, 100}).to(device);
+
     vector<torch::jit::IValue> inputs{sample, startend, occ};
     auto out = module.forward(inputs).toTuple();
     auto output = out->elements();
     auto res = output.at(0).toTensor();
-    cout << res.sizes() << endl;
+    cout << "forward output size:" << res.sizes() << endl;
+
+    inputs.clear();
+    auto inference = module.get_method("inference");
+
+    inputs.push_back(startend);
+    inputs.push_back(occ);
+    // 此处num_sample需要和startend, occ的第一维相同
+    torch::Tensor num_sample = torch::tensor(256);
+    inputs.push_back(num_sample[0]);
+    output = inference(inputs).toTuple()->elements();
+    res = output.at(0).toTensor();
+    cout << "inference output size: " << res.sizes() << endl;
     return 0;
 }

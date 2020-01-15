@@ -9,7 +9,7 @@
         "type": "cppdbg",
         "request": "launch",
         "program": "${workspaceFolder}/build/narrowpassage",
-        "args": ["checkpoints/traced_attention_model.pt"],
+        "args": ["checkpoints/script_attention_model.pt"],
         "stopAtEntry": false,
         "cwd": "${workspaceFolder}",
         "environment": [],
