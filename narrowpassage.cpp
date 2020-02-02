@@ -1,10 +1,11 @@
 #include <torch/torch.h>
 #include <torch/script.h> // One-stop header.
-
+#include "matplotlib-cpp/matplotlibcpp.h"
 #include <iostream>
 #include <memory>
 
 using namespace std;
+namespace plt = matplotlibcpp;
 
 int main(int argc, const char *argv[])
 {
@@ -61,5 +62,13 @@ int main(int argc, const char *argv[])
     output = inference(inputs).toTuple()->elements();
     res = output.at(0).toTensor();
     cout << "inference output size: " << res.sizes() << endl;
+    std::vector<double> x, y;
+    for (int i = 0; i < res.sizes()[0]; ++i)
+    {
+            x.push_back(res[i][0].item<double>());
+            y.push_back(res[i][1].item<double>());
+    }
+    plt::scatter(x, y);
+    plt::show();
     return 0;
 }

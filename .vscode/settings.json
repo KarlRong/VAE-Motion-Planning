@@ -1,7 +1,6 @@
 {
     "python.pythonPath": "/home/rong/.conda/envs/torch/bin/python",
     "cmake.configureOnOpen": true,
-    "C_Cpp.default.configurationProvider": "vector-of-bool.cmake-tools",
     "files.associations": {
         "iostream": "cpp",
         "cctype": "cpp",
