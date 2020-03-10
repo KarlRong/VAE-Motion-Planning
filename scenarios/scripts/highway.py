@@ -61,5 +61,5 @@ def highway_example(render=None):
 
 
 if __name__ == "__main__":
-    exp = highway_example(render=False)
+    exp = highway_example(render=True)
     exp.run(1, 10000, convert_to_csv=True)

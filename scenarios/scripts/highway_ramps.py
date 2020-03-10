@@ -119,5 +119,5 @@ def highway_ramps_example(render=None):
 
 
 if __name__ == "__main__":
-    exp = highway_ramps_example(render=False)
+    exp = highway_ramps_example(render=True)
     exp.run(1, 5000, convert_to_csv=True)

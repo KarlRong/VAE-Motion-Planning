@@ -51,7 +51,7 @@ def plotOrientSpeed(startgoal, data):
 def plotAlpha(alpha):
     fig = plt.figure()
     alpha = alpha[0,:]
-    alpha=alpha.reshape(6,10,60)
+    alpha=alpha.reshape(6,60,60)
     
     myobj = plt.imshow(alpha[0, :, :])
 

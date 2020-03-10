@@ -31,8 +31,11 @@ def minicity_example(render=None,
         A non-rl experiment demonstrating the performance of human-driven
         vehicles on the minicity network.
     """
-    sim_params = SumoParams(sim_step=0.25)
-
+#     sim_params = SumoParams(sim_step=0.25)
+    sim_params = SumoParams(
+        lateral_resolution=2.0,
+        sim_step=0.2
+        )
     # update sim_params values if provided as inputs
     sim_params.render = render or sim_params.render
     sim_params.save_render = save_render or sim_params.save_render
@@ -48,20 +51,32 @@ def minicity_example(render=None,
         car_following_params=SumoCarFollowingParams(
             speed_mode=1,
         ),
+#         lane_change_params=SumoLaneChangeParams(
+#             lane_change_mode="no_lat_collide",
+#         ),
         lane_change_params=SumoLaneChangeParams(
-            lane_change_mode="no_lat_collide",
+            lane_change_mode=1621, 
+            model="SL2015", 
+            lc_impatience="1", 
+            lc_time_to_impatience="0.1"
         ),
         initial_speed=0,
         num_vehicles=90)
-    vehicles.add(
-        veh_id="rl",
-        acceleration_controller=(RLController, {}),
-        routing_controller=(MinicityRouter, {}),
-        car_following_params=SumoCarFollowingParams(
-            speed_mode="obey_safe_speed",
-        ),
-        initial_speed=0,
-        num_vehicles=10)
+    # vehicles.add(
+    #     veh_id="rl",
+    #     acceleration_controller=(RLController, {}),
+    #     routing_controller=(MinicityRouter, {}),
+    #     car_following_params=SumoCarFollowingParams(
+    #         speed_mode="obey_safe_speed",
+    #     ),
+    #     lane_change_params=SumoLaneChangeParams(
+    #         lane_change_mode=1621,
+    #         model="SL2015",
+    #         lc_impatience="1",
+    #         lc_time_to_impatience="0.1"
+    #     ),
+    #     initial_speed=0,
+    #     num_vehicles=10)
 
     env_params = EnvParams(additional_params=ADDITIONAL_ENV_PARAMS)
 
@@ -91,11 +106,11 @@ if __name__ == "__main__":
     # Dynamic grayscale rendering: minicity_example(render="dgray")
     # Static RGB rendering: minicity_example(render="rgb")
     # Dynamic RGB rendering: minicity_example(render="drgb")
-    exp = minicity_example(render='drgb',
+    exp = minicity_example(render='gray',
                            save_render=True,
                            sight_radius=30,
                            pxpm=3,
                            show_radius=False)
 
     # run for a set number of rollouts / time steps
-    exp.run(1, 750)
+    exp.run(1, 7500)
