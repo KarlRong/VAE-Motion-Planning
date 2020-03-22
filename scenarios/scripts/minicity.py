@@ -106,8 +106,8 @@ if __name__ == "__main__":
     # Dynamic grayscale rendering: minicity_example(render="dgray")
     # Static RGB rendering: minicity_example(render="rgb")
     # Dynamic RGB rendering: minicity_example(render="drgb")
-    exp = minicity_example(render='gray',
-                           save_render=True,
+    exp = minicity_example(render=True,
+                           save_render=False,
                            sight_radius=30,
                            pxpm=3,
                            show_radius=False)
